@@ -117,4 +117,4 @@ df_mean <- selected_df %>%
         group_by(subject, activity) %>% 
         summarize_all(mean)
 
-
+write.table(df_mean,file = "results.txt",row.name=FALSE)   
